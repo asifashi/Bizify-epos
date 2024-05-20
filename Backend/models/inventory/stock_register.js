@@ -1,0 +1,36 @@
+const Stockregister =`CREATE TABLE IF NOT EXISTS stock_register (
+    Store_ID NUMERIC(18, 0) NOT NULL,
+    PurchaseID VARCHAR(20),
+    Ref_Voucher_No VARCHAR(50),
+    SNo NUMERIC(18, 0),
+    BatchCode VARCHAR(50),
+    Exp_Date DATETIME,
+    Mat_ID BIGINT,
+    Quantity NUMERIC(18, 4),
+    SIN NUMERIC(18, 4),
+    SOUT NUMERIC(18, 4),
+    Rate NUMERIC(18, 4),
+    Amount NUMERIC(18, 4),
+    Fc_Amount NUMERIC(18, 4),
+    AssignedDate DATETIME,
+    Dep_Code VARCHAR(50),
+    Status VARCHAR(20),
+    TransType CHAR(30),
+    Remarks VARCHAR(200),
+    Unit INT,
+    LocationId INT,
+    JobId INT,
+    FSNO INT,
+    NetStkBal FLOAT,
+    LandingCost FLOAT,
+    CalcDone BIT,
+    PartyName NVARCHAR(150),
+    SERIEALNO INT,
+    CurrentCost DECIMAL(18, 3),
+    Sales_Price DECIMAL(18, 3),
+    Sup_Id INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)`;
+
+
+module.exports = Stockregister
